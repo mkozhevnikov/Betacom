@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<meta name="Author" content="ТД Бетаком" />
+	<meta name="Category" content="подшипники" />
+	<meta name="Description" content="торговля" />
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<!--base href="http://tdbetacom.ru/"-->
+	<title>Бетаком</title>
+	<script src="./js/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/drawers.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/sidenav.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AKex6kwBAAAAvyyHGgIANaXRfOBqwf6TwddJTnEyUZUsNRUAAAAAAAAAAADy-bS4Y6zWW2o20Zu4yDodPitoxQ==" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Создает обработчик события window.onLoad
+        YMaps.jQuery(function () {
+            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+            // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+            map.setCenter(new YMaps.GeoPoint(60.669, 56.856), 15);
+
+			// Создает метку
+			var placemark = new YMaps.Placemark(new YMaps.GeoPoint(60.67,56.8571), {style: "default#lightbluePoint"});
+			// Устанавливает содержимое балуна
+			placemark.name = "ООО ТД Бетаком";
+			placemark.description = "Ул. Шоферов, 13";
+			// Добавляет метку на карту
+			map.addOverlay(placemark);
+
+			// Создает элемент масштабирования
+			var zoomControl = new YMaps.Zoom({noTips: true}, {smooth: false});
+			map.addControl(zoomControl, new YMaps.ControlPosition(YMaps.ControlPosition.BOTTOM_LEFT, new YMaps.Point(10, 10)));
+		})
+    </script>
+	<link rel="stylesheet" href="./css/index.css" type="text/css" charset="utf-8" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<div id="container">
+		<div id="main">
+			<div id="content">
+				<div class="grid3cola">
+					<div class="column first sidebar">
+						<div id="downloadslider" class="sidebox light">
+							<div class="boxcap captop"></div>
+							<ul class="drawers slider">
+								<li>
+									<h3 class="drawer-handle">Контакты</h3>
+									<div class="drawer-content">
+										<ul>
+											<li><a href="./files/Реквизиты ООО ТД Бетаком.docx">Наши Реквизиты</a></li>
+											<li><strong>Генеральный директор:</strong><br/>Кожевников Алексей Михайлович<br/>Email: <a href="mailto:kam63@list.ru">kam63@list.ru</a></li>
+											<li>Меньщиков Дмитрий Георгиевич</li>
+											<li>Таширев Олег<br/>Email: <a href="mailto:betacom-ek@mail.ru">betacom-ek@mail.ru</a></li>
+											<li><strong>Бухгалтер:</strong><br />Галимова Римма Рахимовна</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h3 class="drawer-handle">Партнеры</h3>
+									<div class="drawer-content">
+										<ul>
+											<li><a href="http://www.gpz-10.aaanet.ru/">Ростовский 10 подшипниковый завод</a></li>
+											<li><a href="http://www.appbearing.ru/">Автопромподшипник</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h3 class="drawer-handle">Подшипники</h3>
+									<div class="drawer-content open">
+										<ul>
+											<li>Радиальные шарикоподшипники</li>
+											<li>Упорные шарикоподшипники и роликоподшипники</li>
+											<li>Радиально-упорные шарикоподшипники</li>
+											<li>Самоустанавливающиеся шарикоподшипники</li>
+											<li>Подшипники скольжения</li>
+											<li>Подшипниковые узлы</li>
+											<li>Подшипники с увеличенным внутренним кольцом</li>
+											<li>Ступичные подшипники</li>
+											<li>Выжимные подшипники</li>
+											<li>Конические роликоподшипники</li>
+											<li>Игольчатые подшипники</li>
+											<li>Цилиндрические роликоподшипники</li>
+											<li>Сферические роликоподшипники</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<div class="boxcap"></div>
+						</div>
+					</div><!--/column.first-->
+
+					<div class="column">
+						<div id="logo">
+							<div class="boxtop"></div>
+							<div class="boxbottom">
+								<h1><a href="tdbetacom.ru">ООО ТД БЕТАКОМ</a></h1><br/>
+								<ul>
+									<li>Телефон / Факс: +7(343) 222 - 04 - 54</li>
+									<li>Почта: <a href="mailto:betacom-ek@mail.ru">betacom-ek@mail.ru</a>, <a href="mailto:kam63@list.ru">kam63@list.ru</a></li>
+									<li>Многолетний опыт комплектации любых предприятий подшипниковой продукцией. Консультации по применению, замене на аналоги.</li>
+									<li>Форма оплаты: Наличная / Безналичная</li>
+									<li>Часы работы: ПН-ПТ 9.00-18.00</li>
+								</ul>
+							</div>
+						</div>
+						<div id="showcase">
+							<div class="grid3col">
+								<div class="promo column first">
+									<div class="promocap"></div>
+									<img src="./files/bearing1.gif" alt="Шариковые подшипники" />
+								</div>
+								<div class="promo column">
+									<div class="promocap"></div>
+									<img src="./files/bearing2.gif" alt="Роликовые подшипники" />
+								</div>
+								<div class="promo column last iwork">
+									<div class="promocap"></div>
+									<img src="./files/bearing3.gif" alt="Конические подшипники" />
+								</div>
+							</div>
+						</div><!--/showcase-->
+
+						<div class="box">
+							<div class="featured3rdparty">
+								<div class="boxtop"></div>
+								<div class="grid3col boxbottom">
+									<h2>Наш адрес: ул. Шоферов, 13</h2>
+									<div id="YMapsID"></div>
+									<p>Внимание! Мы переехали.</p>
+								</div>
+							</div><!--/featured3rdparty-->
+						</div>
+					</div><!--/box-->
+
+					<div id="lastColumn" class="column last sidebar">
+						<!--<div class="sidebox">
+							<h2>Скачать прайс</h2>
+							<img alt="прайс подшипники цены" src="./files/download.gif" class="left flushleft" />
+						</div>-->
+						<!--form ation="http://tdbetacom.ru/upload.php" method="post" enctype="multipart/form-data">
+							<input name="upload" type="file" id="file">
+							<input name="sub" type="submit">
+						</form-->
+						<!--div class="GAds">
+							<script type="text/javascript"><!--
+							google_ad_client = "pub-1292261400142640";
+							/* 160x600, created 10/23/10 */
+							google_ad_slot = "2377496239";
+							google_ad_width = 160;
+							google_ad_height = 600;
+							//-->
+							<!--/script>
+							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+						</div-->
+						<!--<div class="LiveInet">
+							&lt;!&ndash;LiveInternet counter&ndash;&gt;
+							<script type="text/javascript">&lt;!&ndash;
+							document.write("<a href='http://www.liveinternet.ru/click' "+
+							"target=_blank><img src='//counter.yadro.ru/hit?t52.3;r"+
+							escape(document.referrer)+((typeof(screen)=="undefined")?"":
+							";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+							screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+							";"+Math.random()+
+							"' alt='' title='LiveInternet: показано число просмотров и"+
+							" посетителей за 24 часа' "+
+							"border='0' width='88' height='31'><\/a>")
+							//&ndash;&gt;</script>
+							&lt;!&ndash;/LiveInternet&ndash;&gt;
+							&lt;!&ndash; begin of Top100 code &ndash;&gt;
+							<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2326731"></script>
+							<noscript><a href="http://top100.rambler.ru/navi/2326731/"><img src="http://counter.rambler.ru/top100.cnt?2326731" alt="Rambler's Top100" border="0" /></a></noscript>
+							&lt;!&ndash; end of Top100 code &ndash;&gt;
+						</div>-->
+					</div><!--/column.last-->
+				</div>
+			</div><!--/content-->
+		</div><!--/main-->
+	</div><!--/container-->
+	<div id="globalfooter" class="gf-980">
+	<div class="gf-sosumi"><p>&copy; MAK, 2009-2013<br /> ООО "ТД Бетаком".</p></div>
+</div>
+</body>
+</html>
